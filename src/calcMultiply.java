@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class calcMutiply implements ICalculator{
+public class calcMultiply implements ICalculator{
     @Override
     public List<Double> calculate(List<Double> values) {
         List<Double> resultList = new ArrayList<>();
