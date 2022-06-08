@@ -1,12 +1,12 @@
 import java.util.List;
 
-public class calcAverage implements ICalculator{
+public class calcMutiply implements ICalculator{
     @Override
     public double calculate(List<Double> values) {
-        double sum = 0;
+        double result = 0;
         for (Double value : values) {
-            sum += value;
+            result *= value;
         }
-        return sum/ values.size();
+        return result;
     }
 }
