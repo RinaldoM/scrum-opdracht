@@ -4,8 +4,8 @@ public class Calculator implements ICalculator {
 
 
     @Override
-    public double calculate(List<Double> values) {
-        return 0;
+    public List<Double> calculate(List<Double> values) {
+        return null;
     }
 }
 

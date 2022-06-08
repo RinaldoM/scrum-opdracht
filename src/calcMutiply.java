@@ -1,12 +1,16 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class calcMutiply implements ICalculator{
     @Override
-    public double calculate(List<Double> values) {
+    public List<Double> calculate(List<Double> values) {
+        List<Double> resultList = new ArrayList<>();
+
         double result = 0;
         for (Double value : values) {
             result *= value;
         }
-        return result;
+        resultList.add(result);
+        return resultList;
     }
 }

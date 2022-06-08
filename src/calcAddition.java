@@ -1,12 +1,16 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class calcAddition implements ICalculator{
     @Override
-    public double calculate(List<Double> values) {
+    public List<Double> calculate(List<Double> values) {
+        List<Double> resultList = new ArrayList<>();
+
         double sum = 0;
         for (Double value : values) {
             sum += value;
         }
-        return sum;
+        resultList.add(sum);
+        return resultList;
     }
 }
